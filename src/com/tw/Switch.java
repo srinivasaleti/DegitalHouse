@@ -2,12 +2,14 @@ package com.tw;
 
 class Switch {
 
-    Switch(Fan fan) {
+    private final Fan fan;
 
+    Switch(Fan fan) {
+        this.fan = fan;
     }
 
     void press() {
-
+        fan.changeState();
     }
 
 }
