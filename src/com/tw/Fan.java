@@ -4,8 +4,7 @@ class Fan {
 
     private State fanState;
 
-    Fan() {
-        ConsoleIO consoleIO = new ConsoleIO(System.out);
+    Fan(IO consoleIO) {
         this.fanState = new OffState(consoleIO);
     }
 

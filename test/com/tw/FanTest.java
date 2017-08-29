@@ -9,7 +9,7 @@ class FanTest {
 
     @Test
     void shouldChangeStateOfFan() {
-        Fan fan = new Fan();
+        Fan fan = new Fan(mock(IO.class));
         State state = mock(State.class);
 
         fan.setState(state);

@@ -3,9 +3,13 @@ package com.tw;
 class DigitalHouseApp {
 
     public static void main(String[] args) {
-        Fan fan = new Fan();
+        IO consoleIO=new ConsoleIO(System.out);
+        Fan fan = new Fan(consoleIO);
         Switch aSwitch = new Switch(fan);
 
+        aSwitch.press();
+        aSwitch.press();
+        aSwitch.press();
         aSwitch.press();
     }
 
