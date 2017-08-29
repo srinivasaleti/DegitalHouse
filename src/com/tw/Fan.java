@@ -4,6 +4,11 @@ class Fan {
 
     private State fanState;
 
+    Fan() {
+        ConsoleIO consoleIO = new ConsoleIO(System.out);
+        this.fanState = new OffState(consoleIO);
+    }
+
     void changeState() {
         this.fanState.changeState(this);
     }
@@ -13,3 +18,4 @@ class Fan {
     }
 
 }
+
