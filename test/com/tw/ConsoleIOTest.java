@@ -21,30 +21,38 @@ class ConsoleIOTest {
 
     @Test
     void displayHello() {
-        this.consoleIO.print("Hello");
+        String hello = "Hello";
 
-        verify(this.out).print("Hello");
+        this.consoleIO.print(hello);
+
+        verify(this.out).print(hello);
     }
 
     @Test
     void displayHi() {
-        this.consoleIO.print("Hi");
+        String hi = "Hi";
 
-        verify(this.out).print("Hi");
+        this.consoleIO.print(hi);
+
+        verify(this.out).print(hi);
     }
 
     @Test
     void displayHelloWithNewLine() {
-        this.consoleIO.println("Hello");
+        String hello = "Hello";
 
-        verify(this.out).println("Hello");
+        this.consoleIO.println(hello);
+
+        verify(this.out).println(hello);
     }
 
     @Test
     void displayHiWithNewLine() {
-        this.consoleIO.println("Hi");
+        String hi = "Hi";
 
-        verify(this.out).println("Hi");
+        this.consoleIO.println(hi);
+
+        verify(this.out).println(hi);
     }
 
 }

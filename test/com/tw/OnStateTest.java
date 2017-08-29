@@ -9,10 +9,11 @@ class OnStateTest {
 
     @Test
     void displayFanOnMessage() {
+        String fanOn = "Fan On";
         IO io = mock(IO.class);
         new OnState(io);
 
-        verify(io).println("Fan On");
+        verify(io).println(fanOn);
     }
 
 }

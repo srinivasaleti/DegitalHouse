@@ -9,10 +9,11 @@ class OffStateTest {
 
     @Test
     void displayFanOFFMessage() {
+        String fanOff = "Fan off";
         IO io = mock(IO.class);
         new OffState(io);
 
-        verify(io).println("Fan off");
+        verify(io).println(fanOff);
     }
 
 }
