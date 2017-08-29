@@ -2,6 +2,6 @@ package com.tw;
 
 interface State {
 
-    void changeState();
+    void changeState(Fan fan);
 
 }
