@@ -9,7 +9,7 @@ import static org.mockito.Mockito.verify;
 class OnStateTest {
 
     @Test
-    void displayFanOnMessage() {
+    void displayDeviceOnMessage() {
         String deviceOn = "Device On";
         IO io = mock(IO.class);
         new OnState(io);
@@ -18,7 +18,7 @@ class OnStateTest {
     }
 
     @Test
-    void shouldChangeStateOfFan() {
+    void shouldChangeStateOfDevice() {
         IO io = mock(IO.class);
         ElectricalDevice device = mock(ElectricalDevice.class);
         OnState onState = new OnState(io);
