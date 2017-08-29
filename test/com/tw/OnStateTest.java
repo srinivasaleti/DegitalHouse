@@ -10,22 +10,22 @@ class OnStateTest {
 
     @Test
     void displayFanOnMessage() {
-        String fanOn = "Fan On";
+        String deviceOn = "Device On";
         IO io = mock(IO.class);
         new OnState(io);
 
-        verify(io).println(fanOn);
+        verify(io).println(deviceOn);
     }
 
     @Test
     void shouldChangeStateOfFan() {
         IO io = mock(IO.class);
-        Fan fan = mock(Fan.class);
+        ElectricalDevice device = mock(ElectricalDevice.class);
         OnState onState = new OnState(io);
 
-        onState.changeState(fan);
+        onState.changeState(device);
 
-        verify(fan).setState(Mockito.any(OffState.class));
+        verify(device).setState(Mockito.any(OffState.class));
     }
 
 }

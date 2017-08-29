@@ -3,14 +3,14 @@ package com.tw;
 //Represents an electrical device
 class Switch {
 
-    private final Fan fan;
+    private final ElectricalDevice device;
 
-    Switch(Fan fan) {
-        this.fan = fan;
+    Switch(ElectricalDevice device) {
+        this.device = device;
     }
 
     void press() {
-        fan.changeState();
+        this.device.changeState();
     }
 
 }

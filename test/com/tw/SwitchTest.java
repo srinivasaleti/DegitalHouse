@@ -8,13 +8,13 @@ import static org.mockito.Mockito.verify;
 class SwitchTest {
 
     @Test
-    void switchShouldChangeStateOfFanAssociatedWithItWhenWePressIt() {
-        Fan fan = mock(Fan.class);
-        Switch aSwitch = new Switch(fan);
+    void switchShouldChangeStateOfDeviceAssociatedWithItWhenWePressIt() {
+        ElectricalDevice device = mock(Fan.class);
+        Switch aSwitch = new Switch(device);
 
         aSwitch.press();
 
-        verify(fan).changeState();
+        verify(device).changeState();
     }
 
 }

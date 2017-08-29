@@ -1,7 +1,7 @@
 package com.tw;
 
 //Represents an apparatus with rotating blades
-class Fan {
+class Fan implements ElectricalDevice {
 
     private State fanState;
 
@@ -9,11 +9,13 @@ class Fan {
         this.fanState = new OffState(consoleIO);
     }
 
-    void changeState() {
+    @Override
+    public void changeState() {
         this.fanState.changeState(this);
     }
 
-    void setState(State state) {
+    @Override
+    public void setState(State state) {
         this.fanState = state;
     }
 
