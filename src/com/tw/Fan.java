@@ -1,5 +1,6 @@
 package com.tw;
 
+//Represents an apparatus with rotating blades
 class Fan {
 
     private State fanState;

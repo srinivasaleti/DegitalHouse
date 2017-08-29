@@ -1,5 +1,6 @@
 package com.tw;
 
+//Represents an electrical device
 class Switch {
 
     private final Fan fan;

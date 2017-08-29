@@ -1,5 +1,6 @@
 package com.tw;
 
+//Represents entry point for app
 class DigitalHouseApp {
 
     public static void main(String[] args) {
