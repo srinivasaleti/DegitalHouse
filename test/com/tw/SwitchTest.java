@@ -9,7 +9,7 @@ class SwitchTest {
 
     @Test
     void switchShouldChangeStateOfDeviceAssociatedWithItWhenWePressIt() {
-        ElectricalDevice device = mock(Fan.class);
+        ElectricalDevice device = mock(ElectricalDevice.class);
         Switch aSwitch = new Switch(device);
 
         aSwitch.press();
