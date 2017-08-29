@@ -15,7 +15,7 @@ class FanTest {
         fan.setState(state);
         fan.changeState();
 
-        verify(state).changeState();
+        verify(state).changeState(fan);
     }
 
 }
