@@ -5,14 +5,14 @@ import org.junit.jupiter.api.Test;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-class OffStateTest {
+class OnStateTest {
 
     @Test
-    void displayFanOFFMessage() {
+    void displayFanOnMessage() {
         IO io = mock(IO.class);
-        new OffState(io);
+        new OnState(io);
 
-        verify(io).println("Fan off");
+        verify(io).println("Fan On");
     }
 
 }
