@@ -2,8 +2,14 @@ package com.tw;
 
 class Fan {
 
-    void changeState() {
+    private State fanState;
 
+    void changeState() {
+        this.fanState.changeState();
+    }
+
+    void setState(State state) {
+        this.fanState = state;
     }
 
 }
